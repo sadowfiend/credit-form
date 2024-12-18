@@ -1,0 +1,123 @@
+/* Основной контейнер формы */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Заголовок формы */
+.form-container h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Стиль для всех инпутов и селектов */
+.form-container input,
+.form-container select,
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Стиль для кнопки */
+.form-container button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.form-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.form-container button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+/* Ошибки формы */
+.form-container span {
+  color: red;
+  font-size: 14px;
+  margin-top: -5px;
+  display: block;
+}
+
+/* Поля ввода для числовых значений */
+.form-container input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #f4f4f4;
+}
+
+/* Ползунок для выбора суммы кредита */
+.form-container input[type="range"] {
+  width: 100%;
+  background-color: #ddd;
+  height: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container input[type="range"]:hover {
+  background-color: #bbb;
+}
+
+/* Стиль для шагов формы */
+.step-title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Отступы для инпутов и селектов */
+.form-container div {
+  margin-bottom: 15px;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4caf50; /* Цвет прогресс-бара */
+    width: 0%; /* Начальная ширина */
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out; /* Плавное изменение */
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 15px;
+  }
+  .form-container h2 {
+    font-size: 20px;
+  }
+  .form-container input,
+  .form-container select,
+  .form-container button {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,56 @@
+/* Success.css */
+.success-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.success-title {
+  font-size: 2rem;
+  color: #28a745;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-data {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-data-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.form-data-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.form-data-item {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.form-data-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-data-value {
+  color: #555;
+}
