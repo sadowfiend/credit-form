@@ -55,7 +55,7 @@ const FormPage = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Отправляем данные:", formData); //лог для проверки данных
+        console.log("Отправляем данные:", formData);
         const errors = {
             ...validatePersonalInfo(formData),
             ...validateAddressInfo(formData),
